@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Biryani&family=Fira+Sans:wght@400;600&family=Racing+Sans+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: red 1px solid; */
+}
+:root {
+  --text: #ededed;
+  --background: #121212;
+  --primary-button: #757575;
+  --secondary-button: #242424;
+  --accent: #696969;
+  --f1: "Biryani", sans-serif;
+  --f2: "Fira Sans", sans-serif;
+  --f3: "Racing Sans One", cursive;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.notifs {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  translate: 0% 0;
+  font-size: 16px;
+  color: var(--text);
+  font-family: var(--f2);
+  padding: 8px 30px;
+  width: 100%;
+}
+.notifs::first-letter {
+  text-transform: uppercase;
+}
+.notifs.error {
+  background-color: #dc3545;
+}
+.notifs.warning {
+  background-color: #fd7e14;
+}
+.notifs.success {
+  background-color: #198754;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container img {
+  width: 380px;
+  height: 500px;
+  object-fit: cover;
+}
+.form {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr;
+  width: 380px;
+  height: 500px;
+  align-items: center;
+  background-color: var(--secondary-button);
+  padding: 20px 30px;
+  color: var(--text);
+  font-family: var(--f2);
+}
+
+.form-label {
+  font-size: 18px;
+}
+.form-input {
+  color: var(--secondary-button);
+  font-size: 18px;
+  padding: 6px 12px;
+  border: 0;
+  outline: 0;
+  font-family: inherit;
+  padding-right: 40px;
+  background-color: var(--text);
+}
+.form-input::placeholder {
+  opacity: 0.5;
+  color: var(--primary-button);
+}
+.form-submition {
+  font-size: 15px;
+  padding: 10px 8px;
+  margin-top: 10px;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: var(--text);
+  background-color: var(--background);
+  font-family: inherit;
+}
+.input-div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+h1 {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: -15px;
+  font-family: var(--f1);
+  line-height: 1.5;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text);
+  background-color: var(--background);
+  font-size: 15px;
+  padding: 10px 8px;
+  flex: 1;
+}
+
+.link-div {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link-div > p {
+  flex: 3;
+}
+
+.card {
+  background-color: var(--primary-button);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.input-div.log {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
