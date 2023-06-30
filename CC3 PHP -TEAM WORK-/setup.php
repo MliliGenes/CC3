@@ -46,11 +46,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/setup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Account setup</title>
 </head>
 
 <body>
-
+    <a href="logout.php" class="logout">Log out</a>
     <div class="container">
         <?php
             $flash = getFlash();
@@ -66,6 +69,7 @@
             ?>
         <img src="./img/banner.jpg" alt="" class="banner">
         <form method="POST" class="form">
+            <a href="index.php" class="back"><i class="fa-solid fa-xmark"></i></a>
             <div class="greating">
                 <h1>Welcome !</h1>
                 <h2><?php echo $userInfo["name"] ?></h2>

@@ -210,3 +210,17 @@ ul li:nth-child(2n + 1) {
 .form-input.contact {
   padding-right: 30px;
 }
+.form .back {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--primary-button);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 20px;
+}

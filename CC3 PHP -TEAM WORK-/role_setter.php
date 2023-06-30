@@ -17,6 +17,6 @@
             $stmt->bindParam(':id', $id);
             $stmt->execute();
         }
-        redirect("setup.php");
+        redirect("index.php");
     }
 ?>

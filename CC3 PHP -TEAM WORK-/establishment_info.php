@@ -19,16 +19,18 @@
         if($stmt->rowCount() != 0){
             redirect('edit_establishment_info.php');
         }
-        $regexTele = "/^(06|07)[0-9]{8}$/";
+        $regexTele = "/^0[5-7][0-9]{8}$/";
         if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["sub"])){
             $name = $_POST["name"];
             $address = $_POST["address"];
+            $city = $_POST["city"];
             $tel = $_POST["tel"];
             $bio = $_POST["bio"];
             $opening = $_POST["opening"];
             $closing = $_POST["closing"]; 
             $category = $_POST["category"];
             if( isset($name) &&
+                isset($city) &&
                 isset($address) &&
                 isset($tel) &&
                 isset($bio) &&
@@ -39,6 +41,9 @@
                     $closingTime = strtotime($closing);
                 if (empty($name)){
                     setFlash("Name is required","error");
+                    redirect("establishment_info.php");
+                }elseif (empty($city)){
+                    setFlash("City is required","error");
                     redirect("establishment_info.php");
                 }elseif (empty($address)){
                     setFlash("Address is required","error");
@@ -75,7 +80,7 @@
                         ,$category
                         ,$bio
                         ,$id))){
-                        redirect("setup.php");
+                        redirect("index.php");
                     }
                     
                 }
@@ -109,6 +114,7 @@
                 }
             ?>
         <form method="POST" class="form">
+            <a href="index.php" class="back"><i class="fa-solid fa-xmark"></i></a>
             <div class="greating">
                 <h1>Establishment</h1>
                 <h2>informations</h2>
@@ -120,9 +126,9 @@
                         <input class="form-input" type="text" name="name" value="<?php echo  getFormInput('name') ?>">
                     </div>
                     <div class="input-div">
-                        <label class="form-label">Address</label>
-                        <input class="form-input" type="text" class="city" name="address"
-                            value="<?php echo  getFormInput('address') ?>">
+                        <label class="form-label">city</label>
+                        <input class="form-input" type="text" class="city" name="city"
+                            value="<?php echo  getFormInput('city') ?>">
                         <ul data-seg></ul>
                     </div>
                     <div class="input-div">
@@ -132,9 +138,16 @@
                         <i class="fa-brands fa-whatsapp"></i>
                     </div>
                 </div>
-                <div class="text-div">
-                    <label class="form-label">Bio</label>
-                    <textarea class="form-text" name="bio" id=""><?php echo  getFormInput('bio') ?></textarea>
+                <div class="wrapper">
+                    <div class="text-div">
+                        <label class="form-label">Bio</label>
+                        <textarea class="form-text" name="bio" id=""><?php echo  getFormInput('bio') ?></textarea>
+                    </div>
+                    <div class="text-div">
+                        <label class="form-label">address</label>
+                        <textarea class="form-text" name="address"
+                            id=""><?php echo  getFormInput('address') ?></textarea>
+                    </div>
                 </div>
             </div>
             <div class="input-div row">

@@ -1,7 +1,7 @@
 <?php
 
 
-function redirect($to = '/'){
+function redirect($to = 'index.php'){
     header(sprintf('Location: %s',$to));
     exit;
 }
@@ -59,10 +59,15 @@ function t($txt){
 return trim($txt);
 }
 
-function isLogedIn($to = "/",$param) {
-        if (!isset($param)) {
-            redirect($to);
-        }
+/** TODO : we don't need param */
+function isLogedIn($to = "/",$param = null) {
+
+    if ( !$_SESSION['id'] ) {
+        redirect($to);
+    }
+
+
+    return true;
 }
 
 function exportToSession($array,$to){

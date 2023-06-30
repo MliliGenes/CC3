@@ -27,7 +27,7 @@
                         unsetSessionValue("email");
                         unsetSessionValue("password");
                         unsetSessionValue("re_password");
-                        redirect("setup.php");
+                        redirect("index.php");
                     }elseif($count == 0){
                         setFlash("Email or password wrong","warning");
                         redirect("login.php");
@@ -47,7 +47,6 @@
 </head>
 
 <body>
-
     <div class="container">
         <form method="POST" class="form">
             <?php
