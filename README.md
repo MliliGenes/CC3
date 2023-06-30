@@ -53,5 +53,4 @@
   <li>Clone this repository to your local machine.</li>
   <li>Set up a local web server environment with PHP support.</li>
   <li>Import the database schema provided in the <code>database</code> folder.</li>
-  <li>...</li>
 </ol>
