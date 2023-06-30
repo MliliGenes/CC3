@@ -24,6 +24,7 @@
         if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["sub"])){
             $name = $_POST["name"];
             $address = $_POST["address"];
+            $city = $_POST["city"];
             $tel = $_POST["tel"];
             $bio = $_POST["bio"];
             $opening = $_POST["opening"];
@@ -31,6 +32,7 @@
             $category = $_POST["category"];
             if( isset($name) &&
                 isset($address) &&
+                isset($city) &&
                 isset($tel) &&
                 isset($bio) &&
                 isset($opening) &&
@@ -41,6 +43,9 @@
                 if (empty($name)){
                     setFlash("Name is required","error");
                     redirect("edit_establishment_info.php");
+                }elseif (empty($city)){
+                    setFlash("City is required","error");
+                    redirect("establishment_info.php");
                 }elseif (empty($address)){
                     setFlash("Address is required","error");
                     redirect("edit_establishment_info.php");
@@ -60,10 +65,11 @@
                     setFlash("Closing hour is required","error");
                     redirect("edit_establishment_info.php");
                 }elseif ($closingTime <= $openingTime){
-                    setFlash("The closing hour should be after the openin","error");
+                    setFlash("The closing hour should be after the opening","error");
                     redirect("edit_establishment_info.php");
                 }elseif ($name == $estInfo["name"]&&
                 $address == $estInfo["address"]&&
+                $city == $estInfo["city"]&&
                 $opening == $estInfo["opening_hours"]&&
                 $closing == $estInfo["closing_hours"]&&
                 $tel == $estInfo["contacts"]&&
@@ -76,6 +82,7 @@
                     $update = "UPDATE `establishment` SET
                     `name` = ?,
                     `address` = ?,
+                    `city` = ?,
                     `opening_hours` = ?,
                     `closing_hours` = ?,
                     `contacts` = ?,
@@ -87,6 +94,7 @@
                                 array(
                                     $name,
                                     $address,
+                                    $city,
                                     $opening,
                                     $closing,
                                     $tel,
@@ -96,7 +104,7 @@
                                 )
                             )) {
                             setFlash("Establishment info are changed", "success");
-                            redirect("edit_establishment_info.php");
+                            redirect("index.php");
                         }
                 }
         }
@@ -129,6 +137,7 @@
                 }
             ?>
         <form method="POST" class="form">
+            <a href="index.php" class="back"><i class="fa-solid fa-xmark"></i></a>
             <div class="greating">
                 <h1>Establishment</h1>
                 <h2>informations</h2>
@@ -140,8 +149,10 @@
                         <input class="form-input" type="text" name="name" value="<?php echo  $estInfo['name'] ?>">
                     </div>
                     <div class="input-div">
-                        <label class="form-label" for="name">Address</label>
-                        <input class="form-input" type="text" name="address" value="<?php echo  $estInfo['address'] ?>">
+                        <label class="form-label">city</label>
+                        <input class="form-input" type="text" class="city" name="city"
+                            value="<?php echo $estInfo['city']  ?>">
+                        <ul data-seg></ul>
                     </div>
                     <div class="input-div">
                         <label class="form-label" for="name">Contact</label>
@@ -150,9 +161,15 @@
                         <i class="fa-brands fa-whatsapp"></i>
                     </div>
                 </div>
-                <div class="text-div">
-                    <label class="form-label" for="name">Bio</label>
-                    <textarea class="form-text" name="bio" id=""><?php echo  $estInfo['bio'] ?></textarea>
+                <div class="wrapper">
+                    <div class="text-div">
+                        <label class="form-label">Bio</label>
+                        <textarea class="form-text" name="bio" id=""><?php echo  $estInfo['bio'] ?></textarea>
+                    </div>
+                    <div class="text-div">
+                        <label class="form-label">address</label>
+                        <textarea class="form-text" name="address" id=""><?php echo  $estInfo['address'] ?></textarea>
+                    </div>
                 </div>
             </div>
             <div class="input-div row">
@@ -183,6 +200,7 @@
             </div>
         </form>
     </div>
+    <script src="./js/countries.js"></script>
 </body>
 
 </html>
