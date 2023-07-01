@@ -51,6 +51,9 @@
     <img src="screenshots/4.png" alt="Image 4" style="width: 100%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
+    <img src="screenshots/12.png" alt="Image 12" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
     <img src="screenshots/5.png" alt="Image 5" style="width: 100%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
