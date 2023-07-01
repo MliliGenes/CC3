@@ -4,19 +4,19 @@
     <img src="screenshots/1.png" alt="Image 1" style="width: 100%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="image2.jpg" alt="Image 2" style="width: 100%; height: auto;">
+    <img src="screenshots/1.png" alt="Image 2" style="width: 100%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="image3.jpg" alt="Image 3" style="width: 100%; height: auto;">
+    <img src="screenshots/1.png" alt="Image 3" style="width: 100%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="image4.jpg" alt="Image 4" style="width: 100%; height: auto;">
+    <img src="screenshots/1.png" alt="Image 4" style="width: 100%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="image5.jpg" alt="Image 5" style="width: 100%; height: auto;">
+    <img src="screenshots/1.png" alt="Image 5" style="width: 100%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="image6.jpg" alt="Image 6" style="width: 100%; height: auto;">
+    <img src="screenshots/1.png" alt="Image 6" style="width: 100%; height: auto;">
 </div>
 </div>
 <h1>Système de Gestion d'Établissement</h1>
