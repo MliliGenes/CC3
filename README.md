@@ -1,34 +1,22 @@
- <style>
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
-        }
 
-        .image-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-    </style>
- <div class="image-grid">
-        <div class="image-item">
-            <img src="image1.jpg" alt="Image 1">
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
+        <div style="border-radius: 5px;">
+            <img src="image1.jpg" alt="Image 1" style="width: 100%; height: auto;">
         </div>
-        <div class="image-item">
-            <img src="image2.jpg" alt="Image 2">
+        <div style="border-radius: 5px;">
+            <img src="image2.jpg" alt="Image 2" style="width: 100%; height: auto;">
         </div>
-        <div class="image-item">
-            <img src="image3.jpg" alt="Image 3">
+        <div style="border-radius: 5px;">
+            <img src="image3.jpg" alt="Image 3" style="width: 100%; height: auto;">
         </div>
-        <div class="image-item">
-            <img src="image4.jpg" alt="Image 4">
+        <div style="border-radius: 5px;">
+            <img src="image4.jpg" alt="Image 4" style="width: 100%; height: auto;">
         </div>
-        <div class="image-item">
-            <img src="image5.jpg" alt="Image 5">
+        <div style="border-radius: 5px;">
+            <img src="image5.jpg" alt="Image 5" style="width: 100%; height: auto;">
         </div>
-        <div class="image-item">
-            <img src="image6.jpg" alt="Image 6">
+        <div style="border-radius: 5px;">
+            <img src="image6.jpg" alt="Image 6" style="width: 100%; height: auto;">
         </div>
     </div>
 <h1>Système de Gestion d'Établissement</h1>
