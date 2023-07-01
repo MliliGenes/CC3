@@ -18,6 +18,18 @@
 <div style="border-radius: 5px;">
     <img src="screenshots/6.png" alt="Image 6" style="width: 100%; height: auto;">
 </div>
+<div style="border-radius: 5px;">
+    <img src="screenshots/7.png" alt="Image 7" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="screenshots/8.png" alt="Image 8" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="screenshots/9.png" alt="Image 9" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="screenshots/10.png" alt="Image 10" style="width: 100%; height: auto;">
+</div>
 </div>
 <h1>Système de Gestion d'Établissement</h1>
 
