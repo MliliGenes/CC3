@@ -1,7 +1,7 @@
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
 <div style="border-radius: 5px;">
-    <img src="image1.jpg" alt="Image 1" style="width: 100%; height: auto;">
+    <img src="screenshots/1.png" alt="Image 1" style="width: 100%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
     <img src="image2.jpg" alt="Image 2" style="width: 100%; height: auto;">
