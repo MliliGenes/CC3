@@ -1,24 +1,24 @@
 
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
-        <div style="border-radius: 5px;">
-            <img src="image1.jpg" alt="Image 1" style="width: 100%; height: auto;">
-        </div>
-        <div style="border-radius: 5px;">
-            <img src="image2.jpg" alt="Image 2" style="width: 100%; height: auto;">
-        </div>
-        <div style="border-radius: 5px;">
-            <img src="image3.jpg" alt="Image 3" style="width: 100%; height: auto;">
-        </div>
-        <div style="border-radius: 5px;">
-            <img src="image4.jpg" alt="Image 4" style="width: 100%; height: auto;">
-        </div>
-        <div style="border-radius: 5px;">
-            <img src="image5.jpg" alt="Image 5" style="width: 100%; height: auto;">
-        </div>
-        <div style="border-radius: 5px;">
-            <img src="image6.jpg" alt="Image 6" style="width: 100%; height: auto;">
-        </div>
-    </div>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
+<div style="border-radius: 5px;">
+    <img src="image1.jpg" alt="Image 1" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="image2.jpg" alt="Image 2" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="image3.jpg" alt="Image 3" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="image4.jpg" alt="Image 4" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="image5.jpg" alt="Image 5" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="image6.jpg" alt="Image 6" style="width: 100%; height: auto;">
+</div>
+</div>
 <h1>Système de Gestion d'Établissement</h1>
 
 <p>Bienvenue dans le référentiel du Système de Gestion d'Établissement ! Cette application web est conçue pour gérer efficacement les établissements et offrir une expérience utilisateur fluide. Elle s'adresse à deux types d'utilisateurs : les professionnels et les citoyens.</p>
