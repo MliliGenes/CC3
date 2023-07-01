@@ -48,14 +48,14 @@ nav > h1 {
 }
 
 .title h1 {
-  padding: 2rem;
+  padding: 0.7rem;
   font-size: 60px;
   text-align: center;
 }
 
 .title h2 {
   color: rgb(255, 225, 0);
-  padding-bottom: 2rem;
+  padding-bottom: 0.7rem;
   font-size: 20px;
   text-align: center;
 }

@@ -134,6 +134,7 @@ h2::first-letter {
   color: var(--text);
   background-color: var(--background);
   font-family: inherit;
+  cursor: pointer;
   width: 100%;
 }
 .logout {
