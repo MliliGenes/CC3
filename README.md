@@ -1,36 +1,4 @@
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-<div style="border-radius: 5px;">
-    <img src="screenshots/1.png" alt="Image 1" style="width: 100%; height: auto;">
-</div>
-<div style="border-radius: 5px;">
-    <img src="screenshots/2.png" alt="Image 2" style="width: 100%; height: auto;">
-</div>
-<div style="border-radius: 5px;">
-    <img src="screenshots/3.png" alt="Image 3" style="width: 100%; height: auto;">
-</div>
-<div style="border-radius: 5px;">
-    <img src="screenshots/4.png" alt="Image 4" style="width: 100%; height: auto;">
-</div>
-<div style="border-radius: 5px;">
-    <img src="screenshots/5.png" alt="Image 5" style="width: 100%; height: auto;">
-</div>
-<div style="border-radius: 5px;">
-    <img src="screenshots/6.png" alt="Image 6" style="width: 100%; height: auto;">
-</div>
-<div style="border-radius: 5px;">
-    <img src="screenshots/7.png" alt="Image 7" style="width: 100%; height: auto;">
-</div>
-<div style="border-radius: 5px;">
-    <img src="screenshots/8.png" alt="Image 8" style="width: 100%; height: auto;">
-</div>
-<div style="border-radius: 5px;">
-    <img src="screenshots/9.png" alt="Image 9" style="width: 100%; height: auto;">
-</div>
-<div style="border-radius: 5px;">
-    <img src="screenshots/10.png" alt="Image 10" style="width: 100%; height: auto;">
-</div>
-</div>
 <h1>Système de Gestion d'Établissement</h1>
 
 <p>Bienvenue dans le référentiel du Système de Gestion d'Établissement ! Cette application web est conçue pour gérer efficacement les établissements et offrir une expérience utilisateur fluide. Elle s'adresse à deux types d'utilisateurs : les professionnels et les citoyens.</p>
@@ -65,6 +33,38 @@
   <li>Délais Serrés : Les échéances rapprochées ont limité le temps disponible pour le développement, les tests et les ajustements, mettant ainsi une pression supplémentaire sur l'équipe.</li>
   <li>Limitations Techniques et Ressources Limitées : Des contraintes techniques, des ressources limitées et des exigences changeantes ont ajouté à la complexité du projet.</li>
 </ol>
+
+<div style="border-radius: 5px;">
+    <img src="screenshots/1.png" alt="Image 1" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="screenshots/2.png" alt="Image 2" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="screenshots/3.png" alt="Image 3" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="screenshots/4.png" alt="Image 4" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="screenshots/5.png" alt="Image 5" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="screenshots/6.png" alt="Image 6" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="screenshots/7.png" alt="Image 7" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="screenshots/8.png" alt="Image 8" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="screenshots/9.png" alt="Image 9" style="width: 100%; height: auto;">
+</div>
+<div style="border-radius: 5px;">
+    <img src="screenshots/10.png" alt="Image 10" style="width: 100%; height: auto;">
+</div>
+
 
 <h2>Prochaines Étapes</h2>
 
