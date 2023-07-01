@@ -1,22 +1,22 @@
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 20px;">
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
 <div style="border-radius: 5px;">
     <img src="screenshots/1.png" alt="Image 1" style="width: 100%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/1.png" alt="Image 2" style="width: 100%; height: auto;">
+    <img src="screenshots/2.png" alt="Image 2" style="width: 100%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/1.png" alt="Image 3" style="width: 100%; height: auto;">
+    <img src="screenshots/3.png" alt="Image 3" style="width: 100%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/1.png" alt="Image 4" style="width: 100%; height: auto;">
+    <img src="screenshots/4.png" alt="Image 4" style="width: 100%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/1.png" alt="Image 5" style="width: 100%; height: auto;">
+    <img src="screenshots/5.png" alt="Image 5" style="width: 100%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/1.png" alt="Image 6" style="width: 100%; height: auto;">
+    <img src="screenshots/6.png" alt="Image 6" style="width: 100%; height: auto;">
 </div>
 </div>
 <h1>Système de Gestion d'Établissement</h1>
