@@ -35,34 +35,34 @@
 </ol>
 
 <div style="border-radius: 5px;">
-    <img src="screenshots/1.png" alt="Image 1" style="width: 100%; height: auto;">
+    <img src="screenshots/1.png" alt="Image 1" style="width: 50%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/2.png" alt="Image 2" style="width: 100%; height: auto;">
+    <img src="screenshots/2.png" alt="Image 2" style="width: 50%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/3.png" alt="Image 3" style="width: 100%; height: auto;">
+    <img src="screenshots/3.png" alt="Image 3" style="width: 50%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/4.png" alt="Image 4" style="width: 100%; height: auto;">
+    <img src="screenshots/4.png" alt="Image 4" style="width: 50%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/5.png" alt="Image 5" style="width: 100%; height: auto;">
+    <img src="screenshots/5.png" alt="Image 5" style="width: 50%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/6.png" alt="Image 6" style="width: 100%; height: auto;">
+    <img src="screenshots/6.png" alt="Image 6" style="width: 50%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/7.png" alt="Image 7" style="width: 100%; height: auto;">
+    <img src="screenshots/7.png" alt="Image 7" style="width: 50%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/8.png" alt="Image 8" style="width: 100%; height: auto;">
+    <img src="screenshots/8.png" alt="Image 8" style="width: 50%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/9.png" alt="Image 9" style="width: 100%; height: auto;">
+    <img src="screenshots/9.png" alt="Image 9" style="width: 50%; height: auto;">
 </div>
 <div style="border-radius: 5px;">
-    <img src="screenshots/10.png" alt="Image 10" style="width: 100%; height: auto;">
+    <img src="screenshots/10.png" alt="Image 10" style="width: 50%; height: auto;">
 </div>
 
 
