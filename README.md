@@ -1,3 +1,36 @@
+ <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+ <div class="image-grid">
+        <div class="image-item">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="image-item">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="image-item">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+        <div class="image-item">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+        <div class="image-item">
+            <img src="image5.jpg" alt="Image 5">
+        </div>
+        <div class="image-item">
+            <img src="image6.jpg" alt="Image 6">
+        </div>
+    </div>
 <h1>Système de Gestion d'Établissement</h1>
 
 <p>Bienvenue dans le référentiel du Système de Gestion d'Établissement ! Cette application web est conçue pour gérer efficacement les établissements et offrir une expérience utilisateur fluide. Elle s'adresse à deux types d'utilisateurs : les professionnels et les citoyens.</p>
