@@ -1,2 +1,2 @@
 <?php 
-require("services.php");
+require("landing.php");

@@ -32,7 +32,7 @@
     foreach($allrevs as $rev){
         $revNum += $rev["rating"];
     }
-    $avg = $reviews->rowCount() > 0 ? round($revNum / $reviews->rowCount(),1) : 0;
+    $avg = $reviews->rowCount() > 0 ? number_format($revNum / $reviews->rowCount(), 1) : 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,6 +47,9 @@
 </head>
 
 <body>
+    <div id="loader">
+        <iframe src="loader.html" frameborder="0"></iframe>
+    </div>
     <nav>
         <h1>Services</h1>
         <?php
@@ -79,11 +82,13 @@
     <section>
         <div class='title'>
             <h1><?= $estInfo["name"] ?></h1>
+            <h4 style="text-align: center; padding:1rem;">Tele : <?= $estInfo["contacts"]?></h4>
             <?php if($avg > 0){ ?>
-            <h2><i class='bi bi-star-fill'></i> <?= $avg ?> <?= $estInfo["city"] ?>, <?= $estInfo["address"] ?></h2>
+            <h2><i class='bi bi-star-fill'></i> <?= $avg ?></h2>
             <?php }else{?>
             <h2><i class='bi bi-star'></i> 0.0</h2>
             <?php }?>
+
 
         </div>
         <div class='wrapper'>
@@ -100,6 +105,11 @@
                     <h2>Opening | Closing time :</h2> <br>
                     <p><?=$estInfo["opening_hours"]?> | <?=$estInfo["closing_hours"]?></p>
                 </div>
+                <div>
+                    <h2>Address</h2> <br>
+                    <p><?=$estInfo["address"] ?></p>
+                </div>
+
             </div>
         </div>
         <div class="revu">
@@ -111,6 +121,7 @@
                             
                         }
                         foreach($allrevs as $rev){
+                            
                             echo "
                             <div class='card'> 
                                     <div>
@@ -193,5 +204,29 @@
         </div>
     </section>
 </body>
+<style>
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #262626;
+    z-index: 9999;
+}
+
+#loader iframe {
+    width: 100%;
+    height: 100%;
+}
+</style>
+<script>
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        var loader = document.getElementById('loader');
+        loader.style.display = 'none';
+    }, 800);
+});
+</script>
 
 </html>

@@ -103,7 +103,6 @@
                                     $id
                                 )
                             )) {
-                            setFlash("Establishment info are changed", "success");
                             redirect("index.php");
                         }
                 }
@@ -123,6 +122,9 @@
 </head>
 
 <body>
+    <div id="loader">
+        <iframe src="loader.html" frameborder="0"></iframe>
+    </div>
     <div class="container">
         <?php
             $flash = getFlash();
@@ -137,7 +139,7 @@
                 }
             ?>
         <form method="POST" class="form">
-            <a href="index.php" class="back"><i class="fa-solid fa-xmark"></i></a>
+            <a href="services.php" class="back"><i class="fa-solid fa-xmark"></i></a>
             <div class="greating">
                 <h1>Establishment</h1>
                 <h2>informations</h2>
@@ -200,7 +202,34 @@
             </div>
         </form>
     </div>
+    <script>
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            var loader = document.getElementById('loader');
+            loader.style.display = 'none';
+        }, 800);
+    });
+    </script>
+    <style>
+    #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #262626;
+        z-index: 9999;
+    }
+
+    #loader iframe {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
     <script src="./js/countries.js"></script>
 </body>
+
+
+
 
 </html>

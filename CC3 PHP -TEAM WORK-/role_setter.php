@@ -17,6 +17,6 @@
             $stmt->bindParam(':id', $id);
             $stmt->execute();
         }
-        redirect("index.php");
+        redirect("services.php");
     }
 ?>

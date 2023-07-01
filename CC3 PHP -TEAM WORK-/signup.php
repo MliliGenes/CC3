@@ -74,7 +74,9 @@
 </head>
 
 <body>
-
+    <div id="loader">
+        <iframe src="loader.html" frameborder="0"></iframe>
+    </div>
     <div class="container">
         <form method="POST" class="form">
             <?php
@@ -117,5 +119,29 @@
         <img src="./img/The path.jpg" alt="">
     </div>
 </body>
+<style>
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #262626;
+    z-index: 9999;
+}
+
+#loader iframe {
+    width: 100%;
+    height: 100%;
+}
+</style>
+<script>
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        var loader = document.getElementById('loader');
+        loader.style.display = 'none';
+    }, 800);
+});
+</script>
 
 </html>

@@ -43,10 +43,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/pagina de zayd.css">
-    <title>establishments</title>
+    <title>Zone-Finder Establishments</title>
 </head>
 
 <body>
+    <div id="loader">
+        <iframe src="loader.html" frameborder="0"></iframe>
+    </div>
     <div class="login">
         <?php if(isset($_SESSION['id'])){ ?>
         <a href="setup.php">Profile</a>
@@ -60,7 +63,7 @@
         <a href="signup.php">sign up</a>
         <?php } ?>
     </div>
-    <h1>Categories</h1>
+    <h1>ZONE-FINDER</h1>
     <div class="cate-container">
 
         <a href="services.php?category=Healthcare" class="cat"><img src="./img/protection.png" alt="">
@@ -132,6 +135,12 @@
         </table>
     </div>
     <script>
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            var loader = document.getElementById('loader');
+            loader.style.display = 'none';
+        }, 800);
+    });
     const links = document.querySelectorAll(".est");
     links.forEach(link => link.addEventListener('click', redirect))
 
@@ -140,6 +149,22 @@
         window.location.href = "info.php?id=" + this.getAttribute("data-id");
     }
     </script>
+    <style>
+    #loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #262626;
+        z-index: 9999;
+    }
+
+    #loader iframe {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
 </body>
 
 </html>
