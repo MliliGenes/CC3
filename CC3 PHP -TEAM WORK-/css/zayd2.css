@@ -17,6 +17,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+.notifs {
+  font-size: 16px;
+  color: var(--text);
+  font-family: var(--f2);
+  padding: 8px 30px;
+  width: 100%;
+}
+.notifs::first-letter {
+  text-transform: uppercase;
+}
+.notifs.error {
+  background-color: #dc3545;
+}
+.notifs.warning {
+  background-color: #fd7e14;
+}
+.notifs.success {
+  background-color: #198754;
+}
 body {
   background-color: var(--background);
   height: 100vh;

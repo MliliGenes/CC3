@@ -1,8 +1,13 @@
 <?php
     require("init.php");
-
-    $id = $_SESSION["id"];
-    if($_SERVER["REQUEST_METHOD"] == "POST" && isset($id)) {
+    if(isset($_SESSION['id'])){
+        $id = $_SESSION["id"];
+    }
+    if($_SERVER["REQUEST_METHOD"] == "POST" ) {
+        if(!isset($_SESSION['id'])){
+            setFlash("you are not loged in","error");
+            redirect('info.php?id='.$_GET["id"]);
+        }
         $rating = $_POST['rate'];
         $comment = t($_POST['comment']);
         $stmt = $pdo->prepare("INSERT INTO review (establishment_id, user_id, rating, comment) VALUES (?, ?, ?, ?)");
@@ -69,7 +74,7 @@
                     </div>
                 </div>";
         }
-        if($estInfo["user_id"] == $id){ ?>
+        if(isset($_SESSION["id"]) &&$estInfo["user_id"] == $_SESSION['id']){ ?>
         <div class="addService">
             <a href="<?php 
             echo sprintf('addserivice.php?idEat=%s',$estInfo['id']);
@@ -80,6 +85,18 @@
         ?>
     </nav>
     <section>
+        <?php
+            $flash = getFlash();
+            if($flash){  
+                ?>
+        <div class="notifs <?php echo $flash["type"];?>">
+            <?php
+                    echo $flash["content"];
+            ?>
+        </div>
+        <?php
+                }
+            ?>
         <div class='title'>
             <h1><?= $estInfo["name"] ?></h1>
             <h4 style="text-align: center; padding:1rem;">Tele : <?= $estInfo["contacts"]?></h4>
